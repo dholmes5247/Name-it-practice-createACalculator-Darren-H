@@ -65,18 +65,18 @@ const readline = require('readline-sync');
 const chooseOperation = readline.question(`-------------------------------------------\nWhat Operation would you like to perform?\n-------------------------------------------\nPlease select from the following options using the number 1, 2 3 etc.:\n 1. Absolute Value\n 2. Calculate Exponenet\n 3. Find the Square Root\n 4. Find the Max and Minimum number from an array\n 5. Generate a random number\n 6. Round a number to a certain # of decimal places\n-------------------\nSelection:`);
 
 if (chooseOperation == 1) {
-    const num = readline.question(`Please enter the number you would like to find the absolute value of:\n`);
+    const num = readline.question(`Please enter the number you would like to find the absolute value of:\n->`);
     console.log(`The absolute value of ${num} is ${absoluteValue(num)}!!!!!!!!!!!!!!!!!!!!!!`);
 };
 
 if (chooseOperation == 2) {
-    const num = readline.question(`Please enter the base number:\n`);
-    const power = readline.question(`Please enter the exponent number:\n`);
+    const num = readline.question(`Please enter the base number:\n->`);
+    const power = readline.question(`Please enter the exponent number:\n->`);
     console.log(`${num} raised to the power of ${power} is ${powerCalc(num, power)}!!!!!!!!!!!!!!!`);
 };
 
 if (chooseOperation == 3) {
-    const num = readline.question(`Please enter the number you would like to find the square root of:\n`);
+    const num = readline.question(`Please enter the number you would like to find the square root of:\n->`);
     console.log(`The square root of ${num} is ${squareRoot(num)}!!!!!!!!!!!!!!!!!!!!!!!`);
 };
 if (chooseOperation == 4) {
